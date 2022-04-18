@@ -20,8 +20,8 @@ function Nav() {
             </a>
           </li>
           <li className={'navbar-item'}>
-            <a href="#project" onClick={() => handleClick()}>
-              Projects
+            <a href="#Portfolio" onClick={() => handleClick()}>
+              Portfolio
             </a>
           </li>
           <li className={'navbar-item'}>
