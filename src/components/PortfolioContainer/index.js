@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
 import Nav from '../Nav';
-import Portfolio from '../Portfolio';
+// import Portfolio from '../Portfolio';
 import About from '../Pages/About';
 import Contact from '../Pages/Contact';
 import Project from '../Pages/Project';
@@ -40,6 +40,7 @@ export default function PortfolioContainer() {
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
+      <Footer />
     </div>
   );
 }

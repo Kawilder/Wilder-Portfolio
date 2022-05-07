@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-export default function Project () {
+export default function Project() {
   const [projects]=  useState([
     {
       title: 'Weekly Witty Writing Prompts',
@@ -43,7 +43,7 @@ export default function Project () {
               <a href={image.url}>
                 <h3>{image.title}</h3>
                 <img 
-                  src={require(`../../../assets/${i}.png`)}
+                  src={require(`../../assets/${i}.png`)}
                   alt={image.title}
                   href={image.url}
                 />

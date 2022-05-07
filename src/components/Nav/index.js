@@ -1,8 +1,9 @@
 import React from "react";
 
-function Nav({ currentPage, handlePageChange }) {
+export default function Nav({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">
+      <h1 className='webpage-title'>Kevin Wilder</h1>
       <li className="nav-item">
         <a
           href="#About"
@@ -43,4 +44,3 @@ function Nav({ currentPage, handlePageChange }) {
   );
 }
 
-export default Nav;
