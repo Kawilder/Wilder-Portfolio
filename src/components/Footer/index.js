@@ -1,9 +1,10 @@
 import React, { useState } from 'react'; 
+import "../../App.css";
 
 export default function Footer () {
   return(
     <footer className="fixed-bottom">
-      <div>
+      <div className="footer-btn">
         <a href="https://github.com/Kawilder">
           <img
             src={require(`../../assets/icons/25231.png`)}
