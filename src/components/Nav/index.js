@@ -9,7 +9,7 @@ function Nav() {
     <header data-testid="header" className="flex-row px-1">
       <h2>
         <a href="/">
-          KW
+          Kevin Wilder
         </a>
       </h2>
       <nav>

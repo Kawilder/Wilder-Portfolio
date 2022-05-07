@@ -7,9 +7,7 @@ function About() {
     <section className='section' id='about'>
       <div className='container'>
         <div className='about-Section'>
-
-            <h1>Kevin Wilder</h1>
-
+          <h1>About me</h1>
           <p>
             Aspiring web developer currently attending University of Minnesota coding bootcamp to gain a wide range of tools and knowledge to enter into the the ever changing field. 
           </p>
