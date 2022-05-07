@@ -1,32 +1,30 @@
 import React, { useState } from 'react';
-import About from '../About';
-import Footer from "../Footer";
-import Header from "../Header";
-import ContactForm from "../Contact";
-import Nav from "../Nav";
-import Project from "../Project";
-import Resume from "../Resume";
+import Footer from '../Footer';
+import Header from '../Header';
+import Nav from '../Nav';
+import Project from '../Portfolio';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
 
     //method to see current page
   const renderPage = () => {
-    if(currentPage === 'About') {
-      console.log('about')
-      return <About />
+    if(currentPage === 'Home') {
+      console.log('Home')
+      return <Home />
      
     }
-    if(currentPage === 'Project') {
-      console.log('project')
-      return <Project />
-    }
-    if(currentPage === 'ContactForm') {
-      console.log('form')
-      return <ContactForm />
+    if(currentPage === 'About') {
+      console.log('About')
+      return <About />
     }
     if(currentPage === 'Resume') {
+      console.log('Resume')
       return <Resume />
+    }
+    if(currentPage === 'Contact') {
+      console.log('Contact')
+      return <Contact />
     }
   }
 
@@ -35,12 +33,10 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-        <Header />
       {/* We are passing the currentPage from state and the function to update it */}
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
-      <Footer />
     </div>
   );
 }

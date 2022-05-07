@@ -1,13 +1,46 @@
 import React from "react";
-import Project from '../Project';
 
-function Portfolio() {
-    return (
-        <section>
-            <h1 className="section-title portfolio-title">My Portfolio</h1>
-            <Project />
-        </section>
-    );
+function Portfolio({ currentPage, handlePageChange }) {
+  return (
+    <ul className="nav nav-tabs">
+      <li className="nav-item">
+        <a
+          href="#home"
+          onClick={() => handlePageChange('Home')}
+          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+        >
+          Home
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#about"
+          onClick={() => handlePageChange('About')}
+          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+        >
+          About
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+          className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#contact"
+          onClick={() => handlePageChange('Contact')}
+          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  );
 }
 
-export default Portfolio;
+  export default Portfolio;

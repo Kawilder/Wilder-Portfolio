@@ -1,12 +1,13 @@
-import './App.css';
-//import Header from './components/Header';
-import Footer from './components/Footer';
-import About from './components/About';
-import Nav from './components/Nav';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
 import React, { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Nav from './components/Nav';
+import Portfolio from './components/Portfolio';
+// import About from './components/About';
+// import Contact from './components/Contact';
+// import Resume from './components/Resume';
+import './App.css';
+
   
 function App() {
   const [currentPage, setCurrentPage] = useState('About');

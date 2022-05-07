@@ -1,15 +1,15 @@
-// import React from 'react'
+import React from 'react'
 
-// function Header () {
-//   return(
-//     <header>
-//       <h1>
-//         <a href='/'>
-//           Kevin Wilder
-//         </a>
-//       </h1>
-//     </header>
-//   )
-// }
+function Header () {
+  return(
+    <header>
+      <h1>
+        <a href='/'>
+          Kevin Wilder
+        </a>
+      </h1>
+    </header>
+  )
+}
 
-// export default Header;
+export default Header;
