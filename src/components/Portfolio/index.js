@@ -5,20 +5,20 @@ function Portfolio({ currentPage, handlePageChange }) {
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
           href="#about"
           onClick={() => handlePageChange('About')}
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
           About
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#project"
+          onClick={() => handlePageChange('project')}
+          className={currentPage === 'project' ? 'nav-link active' : 'nav-link'}
+        >
+          Projects
         </a>
       </li>
       <li className="nav-item">
