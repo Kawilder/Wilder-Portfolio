@@ -1,42 +1,45 @@
 import React from "react";
 
-function Nav() {
-  const handleClick = () => {
-    console.log("click handled")
-  }
-
+function Nav({ currentPage, handlePageChange }) {
   return (
-    <header data-testid="header" className="flex-row px-1">
-      <h2>
-        <a href="/">
-          Kevin Wilder
+    <ul className="nav nav-tabs">
+      <li className="nav-item">
+        <a
+          href="#Projects"
+          onClick={() => handlePageChange('Project')}
+          className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
+        >
+          Projects
         </a>
-      </h2>
-      <nav>
-        <ul className='navbar'>
-          <li className='navbar-tem'>
-            <a href="#about" onClick={() => handleClick()}>
-              About Me
-            </a>
-          </li>
-          <li className={'navbar-item'}>
-            <a href="#Portfolio" onClick={() => handleClick()}>
-              Portfolio
-            </a>
-          </li>
-          <li className={'navbar-item'}>
-            <a href="#Resume" onClick={() => handleClick()}>
-              Resume
-            </a>
-          </li>
-          <li className={'navbar-item'}>
-            <a href="#Contact" onClick={() => handleClick()}>
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#About"
+          onClick={() => handlePageChange('About')}
+          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+        >
+          About Me
+        </a>
+      </li>
+      <li className="Resume">
+        <a
+          href="#Resume"
+          onClick={() => handlePageChange('Resume')}
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#Contact"
+          onClick={() => handlePageChange('Contact')}
+          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
   );
 }
 

@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, { useState } from 'react'; 
 
 function Footer () {
   return(
@@ -18,7 +18,7 @@ function Footer () {
             className="logo"
           />*/}
         </a>
-        <a href="mailto:mailahnheidi@gmail.com">
+        <a href="mailto:kevin_wilde564@yahoo.com">
           {/*<img
             src={require('../../assets/icons/email.jpg')}
             alt="Email logo"
